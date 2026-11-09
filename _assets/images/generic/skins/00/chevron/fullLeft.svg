@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="13px" viewBox="0 0 10 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icons/pagination/full left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="navigation/table-pagination" transform="translate(-354.000000, -19.000000)" fill="#000000">
+            <g id="Assets/icons/pagination/full-left" transform="translate(353.000000, 18.000000)">
+                <path d="M10.5,2 L10.5,13 C10.5,13.2761424 10.2761424,13.5 10,13.5 C9.72385763,13.5 9.5,13.2761424 9.5,13 L9.5,2 C9.5,1.72385763 9.72385763,1.5 10,1.5 C10.2761424,1.5 10.5,1.72385763 10.5,2 Z M7.88215402,1.74587799 L2.44641058,7.5 L7.88215402,13.254122 C8.07475395,13.4580028 8.02618485,13.7493438 7.7736719,13.9048503 C7.52115894,14.0603569 7.16032365,14.0211418 6.96772372,13.8172611 L1,7.5 L6.96772372,1.18273892 C7.16032365,0.978858164 7.52115894,0.939643125 7.7736719,1.09514968 C8.02618485,1.25065624 8.07475395,1.54199723 7.88215402,1.74587799 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

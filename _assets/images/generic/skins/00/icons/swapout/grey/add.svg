@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>add</title>
+    <desc>Created with Sketch.</desc>
+    <g id="2.3-skinned" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-997.000000, -150.000000)" id="add" stroke="#979797" stroke-width="2">
+            <g transform="translate(998.000000, 151.000000)">
+                <circle id="Oval" cx="9" cy="9" r="9"></circle>
+                <path d="M9.20117188,4 L9.20117188,14" id="Path-4" stroke-linecap="round"></path>
+                <path d="M9.20117188,4 L9.20117188,14" id="Path-4" stroke-linecap="round" transform="translate(9.201172, 9.000000) rotate(90.000000) translate(-9.201172, -9.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="13px" viewBox="0 0 10 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icons/pagination/full right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="navigation/table-pagination" transform="translate(-464.000000, -19.000000)" fill="#000000">
+            <g id="Assets/icons/pagination/full-right" transform="translate(463.000000, 18.000000)">
+                <path d="M1.5,13 L1.5,2 C1.5,1.72385763 1.72385763,1.5 2,1.5 C2.27614237,1.5 2.5,1.72385763 2.5,2 L2.5,13 C2.5,13.2761424 2.27614237,13.5 2,13.5 C1.72385763,13.5 1.5,13.2761424 1.5,13 Z M4.11784598,13.254122 L9.55358942,7.5 L4.11784598,1.74587799 C3.92524605,1.54199723 3.97381515,1.25065624 4.2263281,1.09514968 C4.47884106,0.939643125 4.83967635,0.978858164 5.03227628,1.18273892 L11,7.5 L5.03227628,13.8172611 C4.83967635,14.0211418 4.47884106,14.0603569 4.2263281,13.9048503 C3.97381515,13.7493438 3.92524605,13.4580028 4.11784598,13.254122 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

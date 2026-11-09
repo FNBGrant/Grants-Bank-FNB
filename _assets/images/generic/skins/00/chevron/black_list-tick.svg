@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>•/text/tick_blk</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="•/text/tick_blk" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Group" transform="translate(5.000000, 4.000000)" stroke="#000000" stroke-width="2">
+            <path d="M0.5,3.5 L2.5,5.5" id="Line"></path>
+            <path d="M3,6 L8,0.98059082" id="Line"></path>
+        </g>
+    </g>
+</svg>

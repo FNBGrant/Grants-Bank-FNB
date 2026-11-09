@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>templates/coza/ink copy 2</title>
+    <g id="Dav" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Merchant-Services-Legal-2" transform="translate(-25.000000, -1350.000000)" stroke="#000000" stroke-width="1.5">
+            <g id="templates/coza/ink-copy-2" transform="translate(26.000000, 1351.000000)">
+                <circle id="outline" cx="24" cy="24" r="24"></circle>
+                <g id="icon" transform="translate(11.500000, 11.500000)">
+                    <path d="M0.0911538462,7.42716574 L7.36230769,0.0579349745 C7.43730769,-0.0189881024 7.55846154,-0.0189881024 7.63538462,0.0560118976 C7.67192308,0.0906272822 7.69115385,0.140627282 7.69115385,0.192550359 L7.69115385,7.75408882 L0.227692308,7.75408882 C0.121923077,7.75408882 0.0353846154,7.66755036 0.0353846154,7.56178113 C0.0353846154,7.51178113 0.0565384615,7.46370421 0.0911538462,7.42716574 Z" id="Stroke-1"></path>
+                    <path d="M9.1,25.0621657 L0.961538462,25.0621657 C0.430769231,25.0621657 0,24.6313965 0,24.1006273 L0,10.6390888" id="Stroke-3"></path>
+                    <path d="M10.5765385,0.0621657437 L16.3457692,0.0621657437 C16.8765385,0.0621657437 17.3073077,0.492934975 17.3073077,1.02370421 L17.3073077,13.0871657" id="Stroke-5"></path>
+                    <line x1="8.65326923" y1="12.5619734" x2="2.88403846" y2="12.5619734" id="Stroke-7"></line>
+                    <line x1="6.73019231" y1="16.4081273" x2="2.88403846" y2="16.4081273" id="Stroke-9"></line>
+                    <line x1="8.65326923" y1="20.2542811" x2="2.88403846" y2="20.2542811" id="Stroke-11"></line>
+                    <polygon id="Stroke-13" points="16.665 23.6158196 14.5207692 21.4715888 22.4226923 13.5677427 24.5688462 15.7119734"></polygon>
+                    <polygon id="Stroke-15" points="14.5201923 21.4710119 16.6644231 23.6152427 13.0798077 25.0613965"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

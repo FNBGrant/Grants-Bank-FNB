@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="55px" viewBox="0 0 55 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Dispute_Turq</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-43.8%" y="-47.7%" width="187.5%" height="195.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M1.02608819,0 L1.96961007,-1.11022302e-16 C2.52189482,-2.12475365e-16 2.96961007,0.44771525 2.96961007,1 C2.96961007,1.0099778 2.96946073,1.01995504 2.96916211,1.02992837 L2.72962788,9.02992837 C2.71344767,9.57031734 2.27070699,10 1.73007583,10 L1.23214055,10 C0.689885522,10 0.246434066,9.56782325 0.23247208,9.02574801 L0.0264197242,1.02574801 C0.0121994935,0.473646357 0.448238536,0.0145517655 1.00034018,0.000331534847 C1.00892107,0.000110520776 1.01750445,4.45666017e-16 1.02608819,4.4408921e-16 Z" id="path-2"></path>
+        <filter x="-249.1%" y="-75.0%" width="598.1%" height="250.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-4" cx="1.5" cy="12.5" r="1.5"></circle>
+        <filter x="-250.0%" y="-250.0%" width="600.0%" height="600.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Square" transform="translate(-130.000000, -176.000000)">
+            <g id="Dispute_Turq" transform="translate(130.000000, 176.000000)">
+                <rect id="Rectangle" fill="#01AAAD" x="0" y="0" width="55" height="55"></rect>
+                <g id="Group-4-Copy" transform="translate(16.000000, 13.000000)">
+                    <g id="Group-2-Copy-3">
+                        <g id="Group" transform="translate(0.000000, 7.000000)" fill="#FFFFFF">
+                            <g id="Page-1" filter="url(#filter-1)" transform="translate(12.000000, 11.000000) scale(-1, 1) translate(-12.000000, -11.000000) ">
+                                <path d="M21.10176,0 C22.69248,0 24,1.2846087 24,2.86956522 L24,14.3478261 C24,15.9327826 22.69248,17.2173913 21.10176,17.2173913 L9.58176,17.2173913 L3.84,22 L3.84,17.2173913 L2.86176,17.2173913 C1.27104,17.2173913 0,15.9327826 0,14.3478261 L0,2.86956522 C0,1.2846087 1.27104,0 2.86176,0 L21.10176,0 Z" id="Fill-4"></path>
+                            </g>
+                        </g>
+                        <g id="Group-5" transform="translate(3.000000, 0.000000)">
+                            <g id="Rectangle-8">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                <use fill="#EA8B00" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            </g>
+                            <g id="Oval">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                <use fill="#EA8B00" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

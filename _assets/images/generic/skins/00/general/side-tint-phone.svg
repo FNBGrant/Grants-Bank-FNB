@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="185px" viewBox="0 0 375 185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Side Tint</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M99.9508693,-100.20923 C99.9508693,-100.20923 274.793383,-100.600089 276.5,-100.465547 C254.308281,-44.0014526 236.442227,21.8582477 236.442227,87.5581372 C236.442227,152.889725 254.090935,218.463076 276.109603,274.5 C269.340881,274.451588 98.5,274.5 98.5,274.5 L99.9508693,-100.20923 Z" id="path-1"></path>
+        <filter x="-8.4%" y="-4.0%" width="116.9%" height="108.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="UC1-Personalisation-Premer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.801013765">
+        <g id="UC-1.1-Home">
+            <g id="Background" transform="translate(-146.000000, -253.000000)">
+                <g id="homePage_bg_2_ph" transform="translate(146.000000, 253.000000)">
+                    <g id="homePage_mvp_1">
+                        <g id="Side-Tint" transform="translate(187.500000, 87.000000) rotate(-270.000000) translate(-187.500000, -87.000000) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill-opacity="0.95" fill="#01AAAD" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

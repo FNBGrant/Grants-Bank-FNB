@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="13px" viewBox="0 0 7 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icons/pagination/right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Navigation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="navigation/table-pagination" transform="translate(-433.000000, -19.000000)" fill="#000000">
+            <g id="Assets/icons/pagination/right" transform="translate(431.000000, 18.000000)">
+                <path d="M8.88215402,1.74587799 C9.07475395,1.54199723 9.02618485,1.25065624 8.7736719,1.09514968 C8.52115894,0.939643125 8.16032365,0.978858164 7.96772372,1.18273892 L2,7.5 L7.96772372,13.8172611 C8.16032365,14.0211418 8.52115894,14.0603569 8.7736719,13.9048503 C9.02618485,13.7493438 9.07475395,13.4580028 8.88215402,13.254122 L3.44641058,7.5 L8.88215402,1.74587799 Z" id="Path-4" transform="translate(5.500000, 7.500000) rotate(-180.000000) translate(-5.500000, -7.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

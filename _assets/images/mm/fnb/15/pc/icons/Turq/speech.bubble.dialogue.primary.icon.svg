@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="55px" viewBox="0 0 55 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Messages_Turq</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M24.7222448,0 L14.0024828,0 C13.0921277,0 12.368956,0.736484316 12.368956,1.64393821 L12.368956,5.75378372 L16.4919414,5.75378372 C18.7653555,5.75378372 20.6149267,7.59746042 20.6149267,9.86362923 L23.913315,12.3295365 L23.913315,9.86362923 L24.7379121,9.86362923 C25.5625092,9.86362923 26.3871062,9.12714492 26.3871062,8.21969103 L26.3871062,1.64393821 C26.3871062,0.736484316 25.6325999,0 24.7222448,0" id="path-1"></path>
+        <filter x="-53.5%" y="-60.8%" width="207.0%" height="221.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.304829031 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M2.45812387,5.75378372 L18.1254682,5.75378372 C19.4918255,5.75378372 20.6149267,6.85768823 20.6149267,8.21969103 L20.6149267,18.0833203 C20.6149267,19.4453231 19.4918255,20.5492276 18.1254682,20.5492276 L8.23030336,20.5492276 L3.29838828,24.6590731 L3.29838828,20.5492276 L2.45812387,20.5492276 C1.09176652,20.5492276 0,19.4453231 0,18.0833203 L0,8.21969103 C0,6.85768823 1.09176652,5.75378372 2.45812387,5.75378372" id="path-3"></path>
+        <filter x="-36.4%" y="-39.7%" width="172.8%" height="179.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.304376132 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Square" transform="translate(-130.000000, -24.000000)">
+            <g id="Messages_Turq" transform="translate(130.000000, 24.000000)">
+                <rect id="Rectangle" fill="#01AAAD" x="0" y="0" width="55" height="55"></rect>
+                <g id="Group-2-Copy" transform="translate(14.000000, 15.000000)">
+                    <g id="Group">
+                        <g id="Fill-7">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#EA8B00" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Fill-11">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group 2 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="•/icons/banking/tables/add_orange">
+            <g id="Group-2-Copy">
+                <circle id="Oval" stroke="#FF9900" cx="11" cy="11" r="10.5"></circle>
+                <path d="M11.5,10.5 L16.4996527,10.5 C16.7759869,10.5 17,10.7219324 17,11 C17,11.2761424 16.7762654,11.5 16.4996527,11.5 L11.5,11.5 L11.5,16.4996527 C11.5,16.7759869 11.2680664,17 11,17 C10.7238576,17 10.5,16.7709994 10.5,16.4996527 L10.5,11.5 L5.50034732,11.5 C5.22401312,11.5 5,11.2780676 5,11 C5,10.7238576 5.22373461,10.5 5.50034732,10.5 L10.5,10.5 L10.5,5.50034732 C10.5,5.22401312 10.7319336,5 11,5 C11.2761424,5 11.5,5.22900057 11.5,5.50034732 L11.5,10.5 Z" id="Combined-Shape" fill="#FF9900"></path>
+            </g>
+        </g>
+    </g>
+</svg>

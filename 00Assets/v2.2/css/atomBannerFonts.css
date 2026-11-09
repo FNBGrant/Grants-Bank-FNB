@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'AtomFNBSansThin';
+    src: url('../../../_assets/fonts/fnb_sans/FNB_Sans-Thin.html');
+    src: url('../../../_assets/fonts/fnb_sans/fnb_sans-thin-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../../../_assets/fonts/fnb_sans/fnb_sans-thin-webfont.woff') format('woff'),
+         url('../../../_assets/fonts/fnb_sans/fnb_sans-thin-webfont.ttf') format('truetype'),
+         url('../../../_assets/fonts/fnb_sans/fnb_sans-thin-webfont.svg#FNBSansThinRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AtomFNBSansRegular';
+    src: url('../../../_assets/fonts/fnb_sans/fnb_sans-regular-webfont.eot');
+    src: url('../../../_assets/fonts/fnb_sans/fnb_sans-regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('../../../_assets/fonts/fnb_sans/fnb_sans-regular-webfont.woff') format('woff'),
+         url('../../../_assets/fonts/fnb_sans/fnb_sans-regular-webfont.ttf') format('truetype'),
+         url('../../../_assets/fonts/fnb_sans/fnb_sans-regular-webfont.svg#FNBSansRegularRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.SVDBanners.atom-fnbSans-font h2, .SVDBanners.atom-fnbSans-font h3, .SVDBanners.atom-fnbSans-font h4, 
+.SVDBanners.atom-fnbSans-font p, .SVDBanners.atom-fnbSans-font a {
+	font-family: "AtomFNBSansRegular", sans-serif !important;
+	letter-spacing: 0;
+}
+
+.SVDBanners.atom-fnbSans-font h1 {
+	font-family: "AtomFNBSansRegular", sans-serif !important;
+	font-size: 48pt;
+	line-height: 48pt;
+	letter-spacing: 0;
+	margin-bottom: 10px;
+}
+
+.SVDBanners.atom-fnbSans-font h3, .SVDBanners.atom-fnbSans-font h2 {
+	margin-bottom: 5px;
+}
+	
+.SVDBanners.atom-fnbSans-font h3 {
+	font-size: 19pt !important;
+	line-height: 24pt !important;
+}
+
+.SVDBanners.atom-fnbSans-font p {
+	font-size: 14pt;
+	line-height: 24pt;
+}
+
+.SVDBanners.atom-fnbSans-font h3, .SVDBanners.atom-fnbSans-font h2, .SVDBanners.atom-fnbSans-font h1 {
+	text-shadow: none;
+}

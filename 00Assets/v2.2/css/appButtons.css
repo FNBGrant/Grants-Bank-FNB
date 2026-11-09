@@ -1,0 +1,64 @@
+@import "atomBannerFonts.css";
+
+.atom.btn--wrapper:not(.btn--curved):not(.btn--box).btn--roundCorners {
+	width: 150px;
+	position: relative;
+}
+
+.btn--wrapper.atom{
+	position: relative;
+	height: 50px;
+}
+
+.btn--width-2 {
+	margin-bottom: 25px;
+}
+
+.atom.btn--wrapper:not(.btn--curved):not(.btn--box).btn--roundCorners .btn--normal{
+    vertical-align: middle;
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+	cursor: pointer;
+}
+
+.atom.btn.atom.btn:not(.btn--icon) {
+    -webkit-box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    outline: none;
+	border: 0;}
+
+.btn--wrapper.atom.btn--color-ink .btn, .btn--wrapper.atom.btn--color-ink button, .btn--wrapper.atom .btn--color-black .btn, .btn--wrapper.atom .btn--color-black button {
+    position:relative;
+    background-color: #000;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+.atom.btn.atom.btn:not(.btn--icon):hover{
+	top: -.3rem;
+    -webkit-box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  	}
+  	
+.btn.atom.btn--normal {
+    min-height: 35px;
+}
+
+.atom.btn.button-icon-iphone {
+    background-image: url(../../../_assets/images/generic/skins/00/download/AppleStore-wht.svg);
+}
+.atom.btn.button-icon-android {
+    background-image: url(../../../_assets/images/generic/skins/00/download/GoogleStore-wht.svg);
+   }
+.atom.btn.button-icon-huawei {
+    background-image: url(../../../_assets/images/generic/skins/00/download/huawei.svg);
+}

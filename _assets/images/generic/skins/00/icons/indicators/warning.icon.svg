@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>error</title>
+    <g id="error" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F4791F" x="0" y="0" width="75" height="75"></rect>
+        <g id="templates/illustration/00_default/large" transform="translate(22.454167, 22.454167)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+            <g id="icons/reserved/payments">
+                <path d="M30.095,15.0486214 C30.095,23.3601252 23.3578825,30.0972427 15.0463786,30.0972427 C6.73711752,30.0972427 0,23.3601252 0,15.0486214 C0,6.73711752 6.73711752,0 15.0463786,0 C23.3578825,0 30.095,6.73711752 30.095,15.0486214 Z" id="Stroke-1"></path>
+                <line x1="15.0472757" y1="6.41326939" x2="15.0472757" y2="16.7387318" id="Stroke-3"></line>
+                <line x1="15.0472757" y1="23.4908755" x2="15.0472757" y2="22.8113327" id="Stroke-5"></line>
+            </g>
+        </g>
+    </g>
+</svg>
