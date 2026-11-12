@@ -1,6 +1,6 @@
 .loading:AFTER {
 	background-color: rgba(255,255,255,0.5);
-	background-image: url('../images/ajax-loader.gif');
+	background-image: url('/Grants-Bank-FNB/00Assets/v2.2/images/global/ajax-loader.gif');
 	background-position: center center;
 	background-repeat: no-repeat;
 	position: absolute;
