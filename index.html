@@ -447,12 +447,16 @@ body {
     background: #fff !important;
 }
 <script>
-  // Global shield to instantly block and fix any script injecting '6edd' or broken icon paths
+  // Aggressive global shield to intercept and rewrite any '6edd' or broken icon URLs
   const shieldObserver = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
-      if (mutation.target.tagName === 'IMG' && mutation.target.src) {
-        if (mutation.target.src.includes('6edd')) {
-          mutation.target.src = mutation.target.src.replace('6edd', 'a01c');
+      if (mutation.target.tagName === 'IMG') {
+        const src = mutation.target.getAttribute('src');
+        if (src && src.includes('6edd')) {
+          const fixedSrc = src.replace(/6edd/g, 'a01c');
+          if (src !== fixedSrc) {
+            mutation.target.setAttribute('src', fixedSrc);
+          }
         }
       }
     });
@@ -463,6 +467,16 @@ body {
     subtree: true,
     attributes: true,
     attributeFilter: ['src']
+  });
+
+  // Also catch images already in the DOM on load
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('img').forEach(img => {
+      const src = img.getAttribute('src');
+      if (src && src.includes('6edd')) {
+        img.setAttribute('src', src.replace(/6edd/g, 'a01c'));
+      }
+    });
   });
 </script>
 </style>
