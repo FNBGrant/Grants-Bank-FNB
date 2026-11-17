@@ -447,37 +447,15 @@ body {
     background: #fff !important;
 }
 <script>
-// Force-fix navigation icons every 100ms to completely override any stubborn legacy script
+// Instantly intercept and fix 6edd in CSS background-image styles on icon spans
   setInterval(() => {
-    const iconMap = {
-      'Transact': '00Assets/v2.2/images/icons/icon_colour_turq/Transacta01c.svg',
-      'Invest': '00Assets/v2.2/images/icons/icon_colour_turq/Investa01c.svg',
-      'Borrow': '00Assets/v2.2/images/icons/icon_colour_turq/Borrowa01c.svg',
-      'Insure': '00Assets/v2.2/images/icons/icon_colour_turq/Insurea01c.svg',
-      'Product shop': '00Assets/v2.2/images/icons/icon_colour_turq/Basket_colour_turqa01c.png'
-    };
-
-    document.querySelectorAll('li, a.rowButton').forEach(item => {
-      const span = item.querySelector('span.rowButtonText');
-      if (span) {
-        const text = span.textContent.trim();
-        if (iconMap[text]) {
-          let img = item.querySelector('img');
-          if (!img) {
-            img = document.createElement('img');
-            img.style.width = '36px';
-            img.style.height = '36px';
-            img.style.display = 'block';
-            img.style.flexShrink = '0';
-            item.insertBefore(img, span);
-          }
-          if (img.getAttribute('src') !== iconMap[text]) {
-            img.setAttribute('src', iconMap[text]);
-          }
-        }
+    document.querySelectorAll('span.iconImage').forEach(span => {
+      const style = span.getAttribute('style');
+      if (style && style.includes('6edd')) {
+        span.setAttribute('style', style.replace(/6edd/g, 'a01c'));
       }
     });
-  }, 100);
+  }, 50);
 </script>
 </style>
 
