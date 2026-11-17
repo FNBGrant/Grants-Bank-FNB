@@ -447,30 +447,52 @@ body {
     background: #fff !important;
 }
 <script>
- // Intercept all image 'src' assignments globally at the JavaScript engine level
-  const originalImageSrcDescriptor = Object.getOwnPropertyDescriptor(HTMLImageElement.prototype, 'src');
-  if (originalImageSrcDescriptor) {
-    Object.defineProperty(HTMLImageElement.prototype, 'src', {
+ // Ultimate global shield to catch and rewrite '6edd' across all attributes, styles, and innerHTML
+  const fixString = (val) => {
+    if (val && typeof val === 'string' && val.includes('6edd')) {
+      return val.replace(/6edd/g, 'a01c');
+    }
+    return val;
+  };
+
+  // 1. Intercept setAttribute globally
+  const originalSetAttribute = Element.prototype.setAttribute;
+  Element.prototype.setAttribute = function(name, value) {
+    return originalSetAttribute.call(this, name, fixString(value));
+  };
+
+  // 2. Intercept style property assignments (for background-images)
+  const originalStyleDescriptor = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'style');
+  if (originalStyleDescriptor) {
+    Object.defineProperty(HTMLElement.prototype, 'style', {
       get: function() {
-        return originalImageSrcDescriptor.get.call(this);
+        const styleObj = originalStyleDescriptor.get.call(this);
+        return styleObj;
       },
       set: function(value) {
-        if (value && typeof value === 'string' && value.includes('6edd')) {
-          value = value.replace(/6edd/g, 'a01c');
-        }
-        return originalImageSrcDescriptor.set.call(this, value);
+        return originalStyleDescriptor.set.call(this, fixString(value));
       }
     });
   }
 
-  // Also intercept setAttribute for extra safety
-  const originalSetAttribute = Element.prototype.setAttribute;
-  Element.prototype.setAttribute = function(name, value) {
-    if (name === 'src' && typeof value === 'string' && value.includes('6edd')) {
-      value = value.replace(/6edd/g, 'a01c');
-    }
-    return originalSetAttribute.call(this, name, value);
-  };
+  // 3. MutationObserver to catch dynamically injected elements or styles
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.type === 'attributes') {
+        const attrVal = mutation.target.getAttribute(mutation.attributeName);
+        const fixed = fixString(attrVal);
+        if (attrVal !== fixed) {
+          mutation.target.setAttribute(mutation.attributeName, fixed);
+        }
+      }
+    });
+  });
+
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+    attributes: true
+  });
 </script>
 </style>
 
