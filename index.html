@@ -446,6 +446,25 @@ html,
 body {
     background: #fff !important;
 }
+<script>
+  // Global shield to instantly block and fix any script injecting '6edd' or broken icon paths
+  const shieldObserver = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.target.tagName === 'IMG' && mutation.target.src) {
+        if (mutation.target.src.includes('6edd')) {
+          mutation.target.src = mutation.target.src.replace('6edd', 'a01c');
+        }
+      }
+    });
+  });
+
+  shieldObserver.observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ['src']
+  });
+</script>
 </style>
 
 
