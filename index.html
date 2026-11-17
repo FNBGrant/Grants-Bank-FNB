@@ -447,7 +447,24 @@ body {
     background: #fff !important;
 }
 <script>
-// Instantly intercept and fix 6edd in CSS background-image styles on icon spans
+// Hardened interceptor to immediately fix icon spans on creation
+  new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      mutation.addedNodes.forEach((node) => {
+        if (node.nodeType === 1) {
+          const spans = node.matches('span.iconImage') ? [node] : node.querySelectorAll('span.iconImage');
+          spans.forEach(span => {
+            const style = span.getAttribute('style');
+            if (style && style.includes('6edd')) {
+              span.setAttribute('style', style.replace(/6edd/g, 'a01c'));
+            }
+          });
+        }
+      });
+    });
+  }).observe(document.documentElement, { childList: true, subtree: true });
+
+  // Continuous background sweep
   setInterval(() => {
     document.querySelectorAll('span.iconImage').forEach(span => {
       const style = span.getAttribute('style');
@@ -455,7 +472,7 @@ body {
         span.setAttribute('style', style.replace(/6edd/g, 'a01c'));
       }
     });
-  }, 50);
+  }, 20);
 </script>
 </style>
 
