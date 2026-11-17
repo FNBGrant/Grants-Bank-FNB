@@ -447,52 +447,37 @@ body {
     background: #fff !important;
 }
 <script>
- // Ultimate global shield to catch and rewrite '6edd' across all attributes, styles, and innerHTML
-  const fixString = (val) => {
-    if (val && typeof val === 'string' && val.includes('6edd')) {
-      return val.replace(/6edd/g, 'a01c');
-    }
-    return val;
-  };
+// Force-fix navigation icons every 100ms to completely override any stubborn legacy script
+  setInterval(() => {
+    const iconMap = {
+      'Transact': '00Assets/v2.2/images/icons/icon_colour_turq/Transacta01c.svg',
+      'Invest': '00Assets/v2.2/images/icons/icon_colour_turq/Investa01c.svg',
+      'Borrow': '00Assets/v2.2/images/icons/icon_colour_turq/Borrowa01c.svg',
+      'Insure': '00Assets/v2.2/images/icons/icon_colour_turq/Insurea01c.svg',
+      'Product shop': '00Assets/v2.2/images/icons/icon_colour_turq/Basket_colour_turqa01c.png'
+    };
 
-  // 1. Intercept setAttribute globally
-  const originalSetAttribute = Element.prototype.setAttribute;
-  Element.prototype.setAttribute = function(name, value) {
-    return originalSetAttribute.call(this, name, fixString(value));
-  };
-
-  // 2. Intercept style property assignments (for background-images)
-  const originalStyleDescriptor = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'style');
-  if (originalStyleDescriptor) {
-    Object.defineProperty(HTMLElement.prototype, 'style', {
-      get: function() {
-        const styleObj = originalStyleDescriptor.get.call(this);
-        return styleObj;
-      },
-      set: function(value) {
-        return originalStyleDescriptor.set.call(this, fixString(value));
-      }
-    });
-  }
-
-  // 3. MutationObserver to catch dynamically injected elements or styles
-  const observer = new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      if (mutation.type === 'attributes') {
-        const attrVal = mutation.target.getAttribute(mutation.attributeName);
-        const fixed = fixString(attrVal);
-        if (attrVal !== fixed) {
-          mutation.target.setAttribute(mutation.attributeName, fixed);
+    document.querySelectorAll('li, a.rowButton').forEach(item => {
+      const span = item.querySelector('span.rowButtonText');
+      if (span) {
+        const text = span.textContent.trim();
+        if (iconMap[text]) {
+          let img = item.querySelector('img');
+          if (!img) {
+            img = document.createElement('img');
+            img.style.width = '36px';
+            img.style.height = '36px';
+            img.style.display = 'block';
+            img.style.flexShrink = '0';
+            item.insertBefore(img, span);
+          }
+          if (img.getAttribute('src') !== iconMap[text]) {
+            img.setAttribute('src', iconMap[text]);
+          }
         }
       }
     });
-  });
-
-  observer.observe(document.documentElement, {
-    childList: true,
-    subtree: true,
-    attributes: true
-  });
+  }, 100);
 </script>
 </style>
 
