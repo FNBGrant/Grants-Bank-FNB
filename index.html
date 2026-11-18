@@ -447,54 +447,33 @@ body {
     background: #fff !important;
 }
 <script>
-// Real-time observer to fix icon background URLs the moment they are added to the DOM
-  const iconMap = {
-    'Transact': '00Assets/v2.2/images/icons/icon_colour_turq/Transacta01c.svg',
-    'Invest': '00Assets/v2.2/images/icons/icon_colour_turq/Investa01c.svg',
-    'Borrow': '00Assets/v2.2/images/icons/icon_colour_turq/Borrowa01c.svg',
-    'Insure': '00Assets/v2.2/images/icons/icon_colour_turq/Insurea01c.svg',
-    'Product shop': '00Assets/v2.2/images/icons/icon_colour_turq/Basket_colour_turqa01c.png'
-  };
-
-  function fixIcons(root = document) {
-    root.querySelectorAll('a.iconButton').forEach(item => {
-      const textSpan = item.querySelector('span.iconText');
-      const iconSpan = item.querySelector('span.iconImage');
-      if (textSpan && iconSpan) {
-        const text = textSpan.textContent.trim();
-        if (iconMap[text]) {
-          const targetUrl = iconMap[text];
-          const currentBg = iconSpan.style.backgroundImage;
-          if (!currentBg.includes(targetUrl)) {
-            iconSpan.style.setProperty('background-image', `url('${targetUrl}')`, 'important');
-            iconSpan.style.setProperty('background-size', 'contain', 'important');
-            iconSpan.style.setProperty('background-repeat', 'no-repeat', 'important');
-            iconSpan.style.setProperty('background-position', 'center', 'important');
-          }
-        }
-      }
-    });
+/* Force dimensions and background properties on all icon spans */
+  a.iconButton span.iconImage {
+    display: inline-block !important;
+    width: 36px !important;
+    height: 36px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
   }
 
-  // Observe all DOM mutations for dynamically injected elements
-  const observer = new MutationObserver((mutations) => {
-    mutations.forEach(mutation => {
-      mutation.addedNodes.forEach(node => {
-        if (node.nodeType === Node.ELEMENT_NODE) {
-          fixIcons(node);
-        }
-      });
-    });
-  });
-
-  observer.observe(document.documentElement, {
-    childList: true,
-    subtree: true
-  });
-
-  // Run once on load as well
-  document.addEventListener('DOMContentLoaded', () => fixIcons());
-  window.addEventListener('load', () => fixIcons());
+  /* Match each button by its onclick/href attribute and force the exact file */
+  a.iconButton[onclick*="Transact"] span.iconImage {
+    background-image: url('00Assets/v2.2/images/icons/icon_colour_turq/Transacta01c.svg') !important;
+  }
+  a.iconButton[onclick*="Invest"] span.iconImage {
+    background-image: url('00Assets/v2.2/images/icons/icon_colour_turq/Investa01c.svg') !important;
+  }
+  a.iconButton[onclick*="Borrow"] span.iconImage {
+    background-image: url('00Assets/v2.2/images/icons/icon_colour_turq/Borrowa01c.svg') !important;
+  }
+  a.iconButton[onclick*="Insure"] span.iconImage {
+    background-image: url('00Assets/v2.2/images/icons/icon_colour_turq/Insurea01c.svg') !important;
+  }
+  a.iconButton[onclick*="Product"] span.iconImage,
+  a.iconButton[href*="product"] span.iconImage {
+    background-image: url('00Assets/v2.2/images/icons/icon_colour_turq/Basket_colour_turqa01c.png') !important;
+  }
 </script>
 </style>
 
