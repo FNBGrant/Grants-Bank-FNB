@@ -433,14 +433,12 @@
 
 <!-- ICON OVERRIDE SCRIPT -->
 <script>
-  // Force-override inline background styles injected by legacy scripts
+  // Force-override background styles for FNB navigation icons
   document.addEventListener("DOMContentLoaded", () => {
     const fixInlineIcon = (selector, svgData) => {
       document.querySelectorAll(selector).forEach(el => {
-        const iconSpan = el.querySelector('span.iconImage');
-        if (iconSpan) {
-          iconSpan.style.setProperty('background', `url("${svgData}") center / 56px 56px no-repeat #ffffff`, 'important');
-        }
+        let target = el.querySelector('span.iconImage') || el;
+        target.style.setProperty('background', `url("${svgData}") center / 56px 56px no-repeat #ffffff`, 'important');
       });
     };
 
@@ -455,7 +453,7 @@
     fixInlineIcon('a.iconButton[onclick*="Invest"]', investSvg);
     fixInlineIcon('a.iconButton[onclick*="Borrow"]', borrowSvg);
     fixInlineIcon('a.iconButton[onclick*="Insure"]', insureSvg);
-    fixInlineIcon('a.iconButton[onclick*="Product"], a.iconButton[href*="SalesNamibia"]', switchSvg);
+    fixInlineIcon('a.iconButton[href*="SalesNamibia"]', switchSvg);
   });
 </script>
 
