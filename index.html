@@ -447,31 +447,30 @@ body {
     background: #fff !important;
 }
 <script>
-// Force correct icon background URLs, bypassing missing scripts and 404s
-  const iconUrls = {
-    'Transact': '00Assets/v2.2/images/icons/icon_colour_turq/Transacta01c.svg',
-    'Invest': '00Assets/v2.2/images/icons/icon_colour_turq/Investa01c.svg',
-    'Borrow': '00Assets/v2.2/images/icons/icon_colour_turq/Borrowa01c.svg',
-    'Insure': '00Assets/v2.2/images/icons/icon_colour_turq/Insurea01c.svg',
-    'Product shop': '00Assets/v2.2/images/icons/icon_colour_turq/Basket_colour_turqa01c.png'
-  };
+// Permanent asset mapper executed once on DOM ready
+  document.addEventListener("DOMContentLoaded", () => {
+    const iconMap = {
+      'Transact': '00Assets/v2.2/images/icons/icon_colour_turq/Transacta01c.svg',
+      'Invest': '00Assets/v2.2/images/icons/icon_colour_turq/Investa01c.svg',
+      'Borrow': '00Assets/v2.2/images/icons/icon_colour_turq/Borrowa01c.svg',
+      'Insure': '00Assets/v2.2/images/icons/icon_colour_turq/Insurea01c.svg',
+      'Product shop': '00Assets/v2.2/images/icons/icon_colour_turq/Basket_colour_turqa01c.png'
+    };
 
-  setInterval(() => {
     document.querySelectorAll('a.iconButton').forEach(item => {
       const textSpan = item.querySelector('span.iconText');
       const iconSpan = item.querySelector('span.iconImage');
       if (textSpan && iconSpan) {
         const text = textSpan.textContent.trim();
-        if (iconUrls[text]) {
-          const targetUrl = iconUrls[text];
-          const styleAttr = iconSpan.getAttribute('style') || '';
-          if (!styleAttr.includes(targetUrl)) {
-            iconSpan.style.cssText = `background-image: url('${targetUrl}') !important; background-size: contain !important; background-repeat: no-repeat !important; background-position: center !important; display: inline-block !important; width: 32px !important; height: 32px !important;`;
-          }
+        if (iconMap[text]) {
+          iconSpan.style.backgroundImage = `url('${iconMap[text]}')`;
+          iconSpan.style.backgroundSize = 'contain';
+          iconSpan.style.backgroundRepeat = 'no-repeat';
+          iconSpan.style.backgroundPosition = 'center';
         }
       }
     });
-  }, 100);
+  });
 </script>
 </style>
 
