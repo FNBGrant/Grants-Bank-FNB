@@ -516,17 +516,17 @@
     fixInlineIcon('a.iconButton[onclick*="Insure"]', insureSvg);
     fixInlineIcon('a.iconButton[href*="SalesNamibia"]', switchSvg);
 
-    // --- 2. PROMO BANNERS (Robust Fallback Styles to Eliminate 404s) ---
-    const forMeCard = document.getElementById('EN01-ForMe');
-    if (forMeCard) {
-      forMeCard.style.setProperty('background', "linear-gradient(135deg, #005a54 0%, #009a93 100%)", 'important');
-      forMeCard.style.setProperty('display', "block", 'important');
-    }
-
-    const forBusinessCard = document.getElementById('EN03-ForBusiness');
-    if (forBusinessCard) {
-      forBusinessCard.style.setProperty('background', "linear-gradient(135deg, #0b1329 0%, #1e3a8a 100%)", 'important');
-      forBusinessCard.style.setProperty('display', "block", 'important');
+    // --- 2. UNIVERSAL PROMO CARD STYLING ---
+    const promoCards = document.querySelectorAll('#webEntries a, .atom.entries-home-card');
+    if (promoCards.length > 0) {
+      if (promoCards[0]) {
+        promoCards[0].style.setProperty('background', 'linear-gradient(135deg, #005a54 0%, #009a93 100%)', 'important');
+        promoCards[0].style.setProperty('display', 'block', 'important');
+      }
+      if (promoCards[1]) {
+        promoCards[1].style.setProperty('background', 'linear-gradient(135deg, #0b1329 0%, #1e3a8a 100%)', 'important');
+        promoCards[1].style.setProperty('display', 'block', 'important');
+      }
     }
   });
 </script>
