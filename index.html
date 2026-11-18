@@ -447,32 +447,31 @@ body {
     background: #fff !important;
 }
 <script>
-// Hardened interceptor to immediately fix icon spans on creation
-  new MutationObserver((mutations) => {
-    mutations.forEach((mutation) => {
-      mutation.addedNodes.forEach((node) => {
-        if (node.nodeType === 1) {
-          const spans = node.matches('span.iconImage') ? [node] : node.querySelectorAll('span.iconImage');
-          spans.forEach(span => {
-            const style = span.getAttribute('style');
-            if (style && style.includes('6edd')) {
-              span.setAttribute('style', style.replace(/6edd/g, 'a01c'));
-            }
-          });
-        }
-      });
-    });
-  }).observe(document.documentElement, { childList: true, subtree: true });
+// Directly force correct icon background URLs, bypassing the broken 404 script
+  const iconUrls = {
+    'Transact': '00Assets/v2.2/images/icons/icon_colour_turq/Transacta01c.svg',
+    'Invest': '00Assets/v2.2/images/icons/icon_colour_turq/Investa01c.svg',
+    'Borrow': '00Assets/v2.2/images/icons/icon_colour_turq/Borrowa01c.svg',
+    'Insure': '00Assets/v2.2/images/icons/icon_colour_turq/Insurea01c.svg',
+    'Product shop': '00Assets/v2.2/images/icons/icon_colour_turq/Basket_colour_turqa01c.png'
+  };
 
-  // Continuous background sweep
   setInterval(() => {
-    document.querySelectorAll('span.iconImage').forEach(span => {
-      const style = span.getAttribute('style');
-      if (style && style.includes('6edd')) {
-        span.setAttribute('style', style.replace(/6edd/g, 'a01c'));
+    document.querySelectorAll('a.iconButton').forEach(item => {
+      const textSpan = item.querySelector('span.iconText');
+      const iconSpan = item.querySelector('span.iconImage');
+      if (textSpan && iconSpan) {
+        const text = textSpan.textContent.trim();
+        if (iconUrls[text]) {
+          const targetUrl = iconUrls[text];
+          const styleAttr = iconSpan.getAttribute('style') || '';
+          if (!styleAttr.includes(targetUrl)) {
+            iconSpan.style.cssText = `background-image: url('${targetUrl}') !important; background-size: contain !important; background-repeat: no-repeat !important; background-position: center !important; display: inline-block !important; width: 32px !important; height: 32px !important;`;
+          }
+        }
       }
     });
-  }, 20);
+  }, 100);
 </script>
 </style>
 
