@@ -451,6 +451,22 @@
     color: #ffffff !important;
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
   }
+
+  /* Restore Promo Cards Backgrounds and Visibility */
+  .promo-card, .homePromo, .teaserBox, div[class*="promo"], div[class*="teaser"] {
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+  }
+
+  /* Fallback background styling for 'For me' and 'For my business' promo cards */
+  a[href*="For-me"], div[class*="forMe"] {
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('00Assets/v2.2/images/global/forme.jpg') center / cover no-repeat !important;
+  }
+
+  a[href*="For-my-business"], div[class*="forBusiness"] {
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('00Assets/v2.2/images/global/forbusiness.jpg') center / cover no-repeat !important;
+  }
 </style>
 
 
