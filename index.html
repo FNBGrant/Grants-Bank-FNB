@@ -516,15 +516,15 @@
     fixInlineIcon('a.iconButton[onclick*="Insure"]', insureSvg);
     fixInlineIcon('a.iconButton[href*="SalesNamibia"]', switchSvg);
 
-    // --- 2. PROMO BANNERS ---
+    // --- 2. PROMO BANNERS (Using local repository paths with repo subpath) ---
     const forMeCard = document.getElementById('EN01-ForMe');
     if (forMeCard) {
-      forMeCard.style.setProperty('background', "linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url('https://www.fnbnamibia.com.na/04banners/v2.3/2022/EN01-ForMe/img/med/For-me-512-x-288.jpg') top center / cover no-repeat, #006666", 'important');
+      forMeCard.style.setProperty('background', "linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url('/Grants-Bank-FNB/04banners/v2.3/2022/EN01-ForMe/img/med/For-me-512-x-288.jpg') top center / cover no-repeat, #006666", 'important');
     }
 
     const forBusinessCard = document.getElementById('EN03-ForBusiness');
     if (forBusinessCard) {
-      forBusinessCard.style.setProperty('background', "linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url('https://www.fnbnamibia.com.na/04banners/v2.3/2022/EN03-ForBusiness/img/med/For-my-business-512-x-288.jpg') top center / cover no-repeat, #111827", 'important');
+      forBusinessCard.style.setProperty('background', "linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url('/Grants-Bank-FNB/04banners/v2.3/2022/EN03-ForBusiness/img/med/For-my-business-512-x-288.jpg') top center / cover no-repeat, #111827", 'important');
     }
   });
 </script>
