@@ -435,37 +435,35 @@
 <style>
   /* Hero Banner fallback and styling container */
   .hero-banner, .carousel-item, [class*="hero"], [id*="banner"] {
-    background-color: #0b1329 !important; /* Rich dark navy matching FNB branding */
+    background-color: #0b1329 !important;
     background-size: cover !important;
     background-position: center !important;
   }
 
-  /* Promotional Cards ("For me" & "For my business") fallbacks */
-  .promo-card, [class*="promo"], .card-box, .col-md-6 img, div[style*="background-image"] {
-    background-color: #111827 !important;
-  }
-
   /* Ensure text on cards stays visible and crisp white */
   .carousel-caption h2, .carousel-caption p, 
-  [class*="promo"] h3, [class*="promo"] h2, .card-title {
+  [class*="promo"] h3, [class*="promo"] h2, .card-title,
+  .atom.entries-home-card span, .atom.entries-home-card div {
     color: #ffffff !important;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
   }
 
-  /* Restore Promo Cards Backgrounds and Visibility */
-  .promo-card, .homePromo, .teaserBox, div[class*="promo"], div[class*="teaser"] {
-      display: block !important;
-      visibility: visible !important;
-      opacity: 1 !important;
+  /* Force display and visibility for promo card wrappers */
+  .atom.entries-home-card, div[id*="webEntries"] a {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 140px !important;
   }
 
-  /* Fallback background styling for 'For me' and 'For my business' promo cards */
-  a[href*="For-me"], div[class*="forMe"] {
-      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('00Assets/v2.2/images/global/forme.jpg') center / cover no-repeat !important;
+  /* Target 'For me' card by its exact ID */
+  #EN01-ForMe {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('00Assets/v2.2/images/global/forme.jpg') center / cover no-repeat !important;
   }
 
-  a[href*="For-my-business"], div[class*="forBusiness"] {
-      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('00Assets/v2.2/images/global/forbusiness.jpg') center / cover no-repeat !important;
+  /* Target 'For my business' card by its ID prefix or general second card fallback */
+  #EN02-ForBusiness, #EN02-ForMyBusiness, a[id*="ForBusiness"] {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url('00Assets/v2.2/images/global/forbusiness.jpg') center / cover no-repeat !important;
   }
 </style>
 
