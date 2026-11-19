@@ -516,14 +516,14 @@
     fixInlineIcon('a.iconButton[onclick*="Insure"]', insureSvg);
     fixInlineIcon('a.iconButton[href*="SalesNamibia"]', switchSvg);
 
-    // --- 2. PROMO BANNERS WITH EXPLICIT ABSOLUTE PATHS ---
+    // --- 2. PROMO BANNERS VIA GITHUB RAW CDN ---
     const promoCards = document.querySelectorAll('#webEntries a, .atom.entries-home-card');
     if (promoCards[0]) {
-      promoCards[0].style.setProperty('background', "linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://www.fnbnamibia.com.na/04banners/v2.3/2022/EN01-ForMe/img/med/For-me-512-x-288.jpg') center / cover no-repeat", 'important');
+      promoCards[0].style.setProperty('background', "linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://raw.githubusercontent.com/FNBGrant/Grants-Bank-FNB/main/04banners/v2.3/2022/EN01-ForMe/img/med/For-me-512-x-288.jpg') center / cover no-repeat", 'important');
       promoCards[0].style.setProperty('display', 'block', 'important');
     }
     if (promoCards[1]) {
-      promoCards[1].style.setProperty('background', "linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://www.fnbnamibia.com.na/04banners/v2.3/2022/EN03-ForBusiness/img/med/For-my-business-512-x-288.jpg') center / cover no-repeat", 'important');
+      promoCards[1].style.setProperty('background', "linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://raw.githubusercontent.com/FNBGrant/Grants-Bank-FNB/main/04banners/v2.3/2022/EN03-ForBusiness/img/med/For-my-business-512-x-288.jpg') center / cover no-repeat", 'important');
       promoCards[1].style.setProperty('display', 'block', 'important');
     }
   });
