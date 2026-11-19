@@ -496,7 +496,6 @@
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    // --- 1. NAVIGATION ICONS ---
     const fixInlineIcon = (selector, svgData) => {
       document.querySelectorAll(selector).forEach(el => {
         let target = el.querySelector('span.iconImage') || el;
@@ -516,14 +515,21 @@
     fixInlineIcon('a.iconButton[onclick*="Insure"]', insureSvg);
     fixInlineIcon('a.iconButton[href*="SalesNamibia"]', switchSvg);
 
-    // --- 2. PROMO CARDS ---
     const promoCards = document.querySelectorAll('#webEntries a, .atom.entries-home-card');
     if (promoCards[0]) {
-      promoCards[0].style.setProperty('background', "linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.55)), url('https://raw.githubusercontent.com/FNBGrant/Grants-Bank-FNB/main/04banners/_v2.3/2025/EN01-ForMe/img/med/For-me-512-x-288.jpg') center / cover no-repeat, #006666", 'important');
+      promoCards[0].style.setProperty(
+        'background',
+        "linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.55)), url('/Grants-Bank-FNB/04banners/_v2.3/2025/EN01-ForMe/img/med/For-me-512-x-288.jpg') center / cover no-repeat, #006666",
+        'important'
+      );
       promoCards[0].style.setProperty('display', 'block', 'important');
     }
     if (promoCards[1]) {
-      promoCards[1].style.setProperty('background', "linear-gradient(135deg, #0b1329 0%, #1e3a8a 100%)", 'important');
+      promoCards[1].style.setProperty(
+        'background',
+        "linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.55)), url('/Grants-Bank-FNB/04banners/_v2.3/2025/EN03-ForBusiness/img/med/For-my-business-512-x-288.jpg') center / cover no-repeat, #0b1329",
+        'important'
+      );
       promoCards[1].style.setProperty('display', 'block', 'important');
     }
   });
