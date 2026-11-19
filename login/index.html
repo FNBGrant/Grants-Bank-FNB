@@ -67,6 +67,43 @@
     }
   </style>
 </head>
+  2. Add a Local Test-Entry Preview & Download Helper in login/index.html
+When testing a form, displaying the entered username/password back on screen (and optionally letting you download a .txt scratchpad for your own test cases) makes it easy to spot typos right away:
+
+HTML
+<script>
+  const form = document.getElementById("demoLoginForm");
+  const notice = document.getElementById("demoNotice");
+
+  if (form && notice) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const user = document.getElementById("username")?.value || "";
+      const pass = document.getElementById("password")?.value || "";
+
+      notice.style.display = "block";
+      notice.innerHTML = `
+        <strong>Local Test Check:</strong><br />
+        Username entered: <code>${user.replace(/</g, "&lt;")}</code><br />
+        Password length: <code>${pass.length}</code> characters<br />
+        <button type="button" id="downloadTestNote" style="margin-top:8px;padding:6px 10px;cursor:pointer;">
+          Download Test Note (.txt)
+        </button>
+      `;
+
+      document.getElementById("downloadTestNote")?.addEventListener("click", () => {
+        const content = `Test Username: ${user}\nEntered Password Length: ${pass.length}\n`;
+        const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "login-test-notes.txt";
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+    });
+  }
+</script>
 <body>
   <div class="bar-wrap">
     <form id="loginForm">
